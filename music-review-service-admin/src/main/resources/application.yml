@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: dubbo_provider_admin
+
+  registry:
+    address:  47.107.103.217:2181
+    protocol: zookeeper
+
+  protocol:
+    name: dubbo
+    port: 20880
+    
