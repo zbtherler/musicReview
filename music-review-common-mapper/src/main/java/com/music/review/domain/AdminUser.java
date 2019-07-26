@@ -1,6 +1,6 @@
 package com.music.review.domain;
 
-public class User {
+public class AdminUser {
 	
 	private String id;
 	

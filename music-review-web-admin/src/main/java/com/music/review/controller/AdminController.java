@@ -16,4 +16,5 @@ public class AdminController {
 	public String getAdminTest(int flag) {
 		return AdminTestService.getTest(flag);
 	}
+	
 }
