@@ -73,6 +73,18 @@
             <version>0.0.1-admin-service-api</version>
         </dependency>
         
+        <dependency>
+			<groupId>com.music.review</groupId>
+			<artifactId>music-review-common-mapper</artifactId>
+			<version>0.0.1-common.mapper</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-web</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+        
 	</dependencies>
 	
   	<build>

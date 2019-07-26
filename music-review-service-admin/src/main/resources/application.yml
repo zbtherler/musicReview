@@ -9,4 +9,14 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
+
+spring:
+  datasource:
+    username: root
+    password: uAiqwVwjJ8-i
+    url: jdbc:mysql://47.107.103.217:3306/music_review?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    
+        
     
