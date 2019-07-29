@@ -77,6 +77,12 @@
             <version>0.0.1-admin-service-api</version>
         </dependency>
         
+        <dependency>
+            <groupId>com.music.review</groupId>
+            <artifactId>music-review-redis-api</artifactId>
+            <version>0.0.1-redis-api</version>
+        </dependency>
+        
 	</dependencies>
 
 	<build>

@@ -19,6 +19,7 @@
             <artifactId>music-review-common</artifactId>
             <version>0.0.1-music-review-common</version>
         </dependency>
+        
     </dependencies>
 
 </project>

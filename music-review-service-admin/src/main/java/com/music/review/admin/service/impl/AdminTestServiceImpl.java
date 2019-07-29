@@ -14,14 +14,13 @@ public class AdminTestServiceImpl implements AdminTestService{
     private AdminUserMapper adminUserMapper;
 
 	@Override
-	public String getTest(int flag) {
+	public AdminUser getTest(int flag){
 		String id = "111";
 		AdminUser user = adminUserMapper.getUserById(id);
-		if(flag == 1) {
-//			return "来了";
-			return user.getName();
+		if(null != user) {
+			return user;
 		}else {
-			return "爱情走了";
+			return null;
 		}
 	}
 

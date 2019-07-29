@@ -12,6 +12,20 @@
 	<artifactId>music-review-common</artifactId>
 	<version>0.0.1-music-review-common</version>
 	<packaging>jar</packaging>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-pool2</artifactId>
+		    <version>2.6.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.music.review</groupId>
+			<artifactId>music-review-common-pojo</artifactId>
+			<version>0.0.1-common-pojo</version>
+		</dependency>
+	</dependencies>
 
 	<properties>
 		<java.version>1.8</java.version>

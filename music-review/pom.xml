@@ -12,6 +12,7 @@
         <module>../music-review-common-mapper</module>
         <module>../music-review-service-admin</module>
         <module>../music-review-web-admin</module>
+        <module>../music-review-redis</module>
   </modules>
   
   <parent>
@@ -93,6 +94,11 @@
             <artifactId>curator-recipes</artifactId>
             <version>${curator.version}</version>
         </dependency>
+        
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-pool2</artifactId>
+		</dependency>
         
         <!-- lombok 简化代码 注解代替常用代码 -->
         <dependency>

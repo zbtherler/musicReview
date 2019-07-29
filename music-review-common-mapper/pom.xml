@@ -31,6 +31,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.music.review</groupId>
+			<artifactId>music-review-common-pojo</artifactId>
+			<version>0.0.1-common-pojo</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
