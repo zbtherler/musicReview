@@ -1,0 +1,22 @@
+dubbo:
+  application:
+    name: dubbo_provider_redis
+
+  registry:
+    address:  47.107.103.217:2181
+    protocol: zookeeper
+
+  protocol:
+    name: dubbo
+    port: 20881
+    
+spring:
+  redis:
+    host: 47.107.103.217
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 8
+        max-active: 8
+        max-wait: -1
+        min-idle: 0
