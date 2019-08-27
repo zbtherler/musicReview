@@ -4,3 +4,15 @@ spring:
     port: 5672
     username: admin
     password: 123456
+    
+dubbo:
+  application:
+    name: dubbo_provider_redis
+
+  registry:
+    address:  47.107.103.217:2181
+    protocol: zookeeper
+
+  protocol:
+    name: dubbo
+    port: 20882

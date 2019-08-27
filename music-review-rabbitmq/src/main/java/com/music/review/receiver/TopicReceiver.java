@@ -1,13 +1,14 @@
 package com.music.review.receiver;
 
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.stereotype.Component;
 
 import com.music.review.config.RabbitConfig;
+import com.music.review.ireceiver.ITopicReceiver;
 
 @Component
-public class TopicReceiver {
+public class TopicReceiver implements ITopicReceiver{
 	
 	// queues是指要监听的队列的名字
     @RabbitListener(queues = RabbitConfig.TOPIC_QUEUE1)
