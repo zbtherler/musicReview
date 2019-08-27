@@ -83,6 +83,12 @@
             <version>0.0.1-redis-api</version>
         </dependency>
         
+        <dependency>
+            <groupId>com.music.review</groupId>
+            <artifactId>music-review-rabbitmq-api</artifactId>
+            <version>0.0.1-rabbitmq-api</version>
+        </dependency>
+        
 	</dependencies>
 
 	<build>
