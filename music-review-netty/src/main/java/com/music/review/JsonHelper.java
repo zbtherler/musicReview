@@ -2,7 +2,9 @@ package com.music.review;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -58,6 +60,27 @@ public class JsonHelper {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+
+	public static String createPaySign(Map<String, Object> signParamMap, String appsecret) {
+		//签名
+		List<String> paramList = new ArrayList<String>(signParamMap.keySet());
+		String [] keyArr = new String[paramList.size()];
+		keyArr = paramList.toArray(keyArr);
+		Arrays.sort(keyArr);
+
+		StringBuffer buffer = new StringBuffer();
+		for (String key1 : keyArr) {
+			if(null != signParamMap.get(key1)){
+				buffer.append(key1+"="+signParamMap.get(key1)+"&");
+			}
+		}
+		buffer.append("key=" +appsecret);
+		System.out.println(buffer.toString());
+		String sign = MD5Util.MD5Encode(buffer.toString(), "UTF-8").toUpperCase();
+		System.out.println("sign:"+sign);
+		return sign;
 	}
 	
 	public static void main(String[] args) {
