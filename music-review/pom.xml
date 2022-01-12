@@ -23,7 +23,7 @@
   
   <properties>
 		<java.version>1.8</java.version>
-		<dubbo.version>2.7.1</dubbo.version>
+		<dubbo.version>2.7.15</dubbo.version>
         <zk.version>3.5.5</zk.version>
         <zkclient.version>0.11</zkclient.version>
         <curator.version>2.12.0</curator.version>
