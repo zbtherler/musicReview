@@ -10,6 +10,8 @@ public class AdminUser implements Serializable{
 	
 	private String name;
 
+	private String tel;
+
 	public String getId() {
 		return id;
 	}
@@ -25,6 +27,12 @@ public class AdminUser implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 
+	public String getTel() {
+		return tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 }
